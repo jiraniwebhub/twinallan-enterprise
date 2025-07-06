@@ -1,0 +1,183 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  color: #2d3436;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #00b894, #09804f);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: white;
+  color: #00b894;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background: #d8f5ee;
+}
+
+/* About Section */
+.about {
+  background: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  color: #00b894;
+  margin-bottom: 15px;
+}
+
+/* Services Section */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  color: #00b894;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  width: 280px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #636e72;
+  font-size: 0.95rem;
+}
+
+/* Why Choose Us */
+.why {
+  background: #ecfdf6;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.why h2 {
+  color: #00b894;
+  margin-bottom: 20px;
+}
+
+.why ul {
+  list-style: none;
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+}
+
+.why li {
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+/* Contact Section */
+.contact {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #00b894;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 450px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background: #00b894;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #009e7a;
+}
+
+/* Footer */
+footer {
+  background: #2d3436;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Twin Allan Enterprises - Your Trusted Service Partner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header / Hero -->
+  <header class="hero">
+    <h1>Twin Allan Enterprises</h1>
+    <p>Professional Front-Office Services for Everyone</p>
+    <a href="#contact" class="btn">Request Service</a>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>Who We Are</h2>
+    <p>
+      Twin Allan Enterprises is a reliable front-office solution provider offering quality printing, licensing, academic applications, and online support services to individuals, students, and small businesses in Kenya.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>🖨️ Printing & Photocopying</h3>
+        <p>Get clear black & white or colored prints, copies, scanning and document processing.</p>
+      </div>
+      <div class="card">
+        <h3>🧾 KRA, KUCCPS & NHIF Services</h3>
+        <p>We assist with KRA PIN registration, KUCCPS university applications, NHIF forms and more.</p>
+      </div>
+      <div class="card">
+        <h3>📝 Online Form Filling</h3>
+        <p>Support with government forms, online job applications, scholarship and loan portals.</p>
+      </div>
+      <div class="card">
+        <h3>📜 Business Licensing</h3>
+        <p>We help you apply or renew your business license, permits, and other regulatory documents.</p>
+      </div>
+      <div class="card">
+        <h3>📎 Binding & Lamination</h3>
+        <p>Protect and present your documents professionally with lamination and spiral binding.</p>
+      </div>
+      <div class="card">
+        <h3>🌐 Website & Email Help</h3>
+        <p>We assist with basic web presence setup, email creation, and online file uploads.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why">
+    <h2>Why Clients Trust Us</h2>
+    <ul>
+      <li>✅ Fast, same-day services</li>
+      <li>✅ Affordable and transparent pricing</li>
+      <li>✅ Expert help with documents and systems</li>
+      <li>✅ Friendly and professional support</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us via WhatsApp</h2>
+    <form id="whatsappForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="How can we help you?" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Twin Allan Enterprises. All rights reserved.</p>
+    <p>📍 Based in Kenya | ☎️ +254 723096333</p>
+  </footer>
+
+  <!-- WhatsApp Script -->
+  <script>
+    document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+      const phone = "254723096333";
+      const link = `https://wa.me/${phone}?text=Hello, my name is ${name} (${email}). ${message}`;
+      window.open(link, "_blank");
+    });
+  </script>
+</body>
+</html>
